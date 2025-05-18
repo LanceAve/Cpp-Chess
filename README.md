@@ -11,6 +11,12 @@ This project is a hands-on exercise in data structure modeling, search algorithm
 - [ ] (Eventually) implement basic AI using minimax and evaluation heuristics
 - [ ] (Optional) Explore machine learning or reinforcement learning as future extension
 
+## References
+
+The following links are going to be referenced throughout the bring-up of this project 
+(more will be added as I slueth the internet)
+- https://www.chessprogramming.org/Getting_Started
+
 ## License
 
 This project is licensed under the MIT License — see `LICENSE` for details.
