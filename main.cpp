@@ -1,4 +1,5 @@
 #include <iostream>
+using namespace std;
 
 // This will follow the rank-file system (rows first, columns second)
 
