@@ -3,4 +3,9 @@ project(Cpp_Chess)
 
 set(CMAKE_CXX_STANDARD 20)
 
-add_executable(Cpp_Chess main.cpp)
+include_directories(entities)
+
+add_executable(Cpp_Chess
+        main.cpp
+        src/Square.cpp
+)
