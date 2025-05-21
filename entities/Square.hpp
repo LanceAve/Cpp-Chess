@@ -11,9 +11,7 @@ class Square {
 public:
     // square constructor that accepts piece as a parameter
     explicit Square(Piece* p) {
-
-        // initialize p variable
-        piece = p;
+        piece = p;      // initialize p variable
 
         // check if piece is occupied
         if (p != nullptr) {
@@ -23,15 +21,8 @@ public:
         }
     }
 
-    // return this.square's piece pointer
-    Piece* getPiece();
-
-    // set this.square's piece pointer
-    Piece* setPiece(Piece* p);
-
-    // clear this.square's piece pointer
-    Piece* clear();
-
-    // return if the current square contains a piece
-    bool hasPiece() const;
+    Piece* getPiece() const;    // return this.square's piece pointer
+    Piece* setPiece(Piece* p);  // set this.square's piece pointer
+    Piece* clear();             // clear this.square's piece pointer
+    bool hasPiece() const;      // return if the current square contains a piece
 };
