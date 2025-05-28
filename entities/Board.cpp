@@ -1,6 +1,7 @@
 #include "Board.hpp"
 #include <iostream>
-
+#include <locale>
+#include <ostream>
 
 
 // Constructor: allocate 8x8 grid and initialize empty squares
@@ -47,6 +48,7 @@ void Board::movePiece(int fromRow, int fromCol, int toRow, int toCol) {
     from->clear();  // remove from source
 }
 
+// TODO use unicode to make it easier to see
 // Print the board for debugging
 void Board::printBoard() {
     for (int row = 0; row < 8; ++row) {
