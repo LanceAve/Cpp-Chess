@@ -10,6 +10,17 @@ Board::Board() {
             grid[row][col] = new Square(nullptr); // start empty
         }
     }
+    // testing out pawn placement
+
+    // Add white pawns (row 6)
+    for (int col = 0; col < 8; ++col) {
+        grid[6][col]->setPiece(new Piece{pawn, Color::white});
+    }
+
+    // Add black pawns (row 1)
+    for (int col = 0; col < 8; ++col) {
+        grid[1][col]->setPiece(new Piece{pawn, Color::black});
+    }
 }
 
 // Destructor: free allocated memory
