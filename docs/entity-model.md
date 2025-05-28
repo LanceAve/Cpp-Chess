@@ -8,21 +8,26 @@ A `Piece` consists of:
 
 ## Square
 
-A `Square` is defined as:
-- Either containing a `Piece`, or
-- Being empty (null)
+A `Square`:
+- Holds a pointer to a `Piece`, or is set to `nullptr` if empty
+- Provides methods:
+  - `hasPiece()`: returns whether a piece is present
+  - `getPiece()`, `setPiece()`, `clear()`
 
 ## Board
 
-- The board is represented as an 8×8 2D array: `board[rank][file]`
-- Each element in the array is a `Square`
-- The board layout aligns with algebraic notation:
-    - `board[0][0]` = `a1`
-    - `board[7][7]` = `h8`
+- Represented as an 8×8 2D array of `Square*`
+- Indexed with `[rank][file]` (row-major order)
+- Corresponds to standard chess notation:
+  - `board[0][0]` = `a1`
+  - `board[7][7]` = `h8`
+- Supports:
+  - `movePiece(fromRow, fromCol, toRow, toCol)`
+  - `printBoard()` for console visualization
 
-## Glossary:
+## Glossary
 
 - `PieceType`: enum representing chess piece identity
-- `Color`: side (white or black)
-- `Square`: data structure holding a Piece or null
-- `Board`: 2D grid of Squares, 8×8
+- `Color`: enum class denoting white or black side
+- `Square`: unit of the board grid holding a piece or nothing
+- `Board`: game state container with squares and movement logic
