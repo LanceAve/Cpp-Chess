@@ -49,6 +49,33 @@ void Board::movePiece(int fromRow, int fromCol, int toRow, int toCol) {
 }
 
 // TODO use unicode to make it easier to see
+// Helper function to get Unicode symbol for each piece
+std::string getUnicodePiece(Piece* p) {
+    if (p == nullptr) return "·";  // Middle dot for empty square
+
+    if (p->color == Color::white) {
+        switch (p->type) {
+            case king:   return "♔";
+            case queen:  return "♕";
+            case rook:   return "♖";
+            case bishop: return "♗";
+            case knight: return "♘";
+            case pawn:   return "♙";
+        }
+    } else {
+        switch (p->type) {
+            case king:   return "♚";
+            case queen:  return "♛";
+            case rook:   return "♜";
+            case bishop: return "♝";
+            case knight: return "♞";
+            case pawn:   return "♟";
+        }
+    }
+
+    return "?";
+}
+
 // Print the board for debugging
 void Board::printBoard() {
     for (int row = 0; row < 8; ++row) {
