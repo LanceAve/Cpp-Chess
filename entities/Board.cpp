@@ -80,22 +80,8 @@ std::string getUnicodePiece(Piece* p) {
 void Board::printBoard() {
     for (int row = 0; row < 8; ++row) {
         for (int col = 0; col < 8; ++col) {
-            if (grid[row][col]->hasPiece()) {
-                Piece* p = grid[row][col]->getPiece();
-
-                // alter switch statement to show colors
-                switch (p->type) {
-                    case pawn: std::cout << (p->color == Color::white ? "P " : "p "); break;
-                    case knight: std::cout << (p->color == Color::white ? "N " : "n "); break;
-                    case bishop: std::cout << (p->color == Color::white ? "B " : "b "); break;
-                    case rook: std::cout << (p->color == Color::white ? "R " : "r "); break;
-                    case queen: std::cout << (p->color == Color::white ? "Q " : "q "); break;
-                    case king: std::cout << (p->color == Color::white ? "K " : "k "); break;
-                    default: std::cout << "? "; break;
-                }
-            } else {
-                std::cout << ". ";
-            }
+            Piece* p = grid[row][col]->getPiece();
+            std::cout << getUnicodePiece(p) << " ";
         }
         std::cout << std::endl;
     }
