@@ -6,6 +6,7 @@ set(CMAKE_CXX_STANDARD 20)
 include_directories(entities)
 
 add_executable(Cpp_Chess
-        main.cpp
-        src/Square.cpp
+        src/main.cpp
+        entities/Square.cpp
+        entities/Board.cpp
 )
