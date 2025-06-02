@@ -133,4 +133,10 @@ bool Board::isValidMove(int fromRow, int fromCol, int toRow, int toCol) {
     Square* from = getSquareAt(fromRow, fromCol);
     Square* to = getSquareAt(toRow, toCol);
 
+    // Ensure there’s a piece to move
+    if (!from->hasPiece()) {
+        return false;
+    }
+
+    Piece* movingPiece = from->getPiece();
 }
