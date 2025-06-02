@@ -130,4 +130,7 @@ bool Board::isValidMove(int fromRow, int fromCol, int toRow, int toCol) {
         return false;
         }
 
+    Square* from = getSquareAt(fromRow, fromCol);
+    Square* to = getSquareAt(toRow, toCol);
+
 }
