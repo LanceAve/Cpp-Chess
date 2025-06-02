@@ -101,4 +101,9 @@ void Board::setupBoard() {
     grid[7][6]->setPiece(new Piece{knight, white});
     grid[7][7]->setPiece(new Piece{rook, white});
 
+    // Row 2 – White pawns
+    for (int col = 0; col < 8; ++col) {
+        grid[6][col]->setPiece(new Piece{pawn, white});
+    }
+
 }
