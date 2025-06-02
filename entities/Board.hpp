@@ -14,4 +14,6 @@ public:
     Square* getSquareAt(int row, int col);
     void movePiece(int fromRow, int fromCol, int toRow, int toCol);
     void printBoard();  // simple terminal representation
+    bool isValidMove(int fromRow, int fromCol, int toRow, int toCol);
+    void setupBoard(); // optional if you modularize the setup
 };
