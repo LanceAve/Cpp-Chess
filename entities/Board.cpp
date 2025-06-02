@@ -145,4 +145,6 @@ bool Board::isValidMove(int fromRow, int fromCol, int toRow, int toCol) {
         return false;
     }
 
+    // More logic (piece-specific rules) will go here in future
+    return true;
 }
