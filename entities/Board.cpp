@@ -111,4 +111,15 @@ void Board::setupBoard() {
         grid[1][col]->setPiece(new Piece{pawn, black});
     }
 
+    // Row 8 – Black major pieces
+    grid[0][0]->setPiece(new Piece{rook, black});
+    grid[0][1]->setPiece(new Piece{knight, black});
+    grid[0][2]->setPiece(new Piece{bishop, black});
+    grid[0][3]->setPiece(new Piece{queen, black});
+    grid[0][4]->setPiece(new Piece{king, black});
+    grid[0][5]->setPiece(new Piece{bishop, black});
+    grid[0][6]->setPiece(new Piece{knight, black});
+    grid[0][7]->setPiece(new Piece{rook, black});
+}
+
 }
