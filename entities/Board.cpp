@@ -122,4 +122,5 @@ void Board::setupBoard() {
     grid[0][7]->setPiece(new Piece{rook, black});
 }
 
+bool Board::isValidMove(int fromRow, int fromCol, int toRow, int toCol) {
 }
