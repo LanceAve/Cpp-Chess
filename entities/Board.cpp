@@ -123,4 +123,11 @@ void Board::setupBoard() {
 }
 
 bool Board::isValidMove(int fromRow, int fromCol, int toRow, int toCol) {
+
+    // Check board bounds
+    if (fromRow < 0 || fromRow >= 8 || fromCol < 0 || fromCol >= 8 ||
+        toRow < 0 || toRow >= 8 || toCol < 0 || toCol >= 8) {
+        return false;
+        }
+
 }
