@@ -48,7 +48,6 @@ void Board::movePiece(int fromRow, int fromCol, int toRow, int toCol) {
     from->clear();  // remove from source
 }
 
-// TODO use unicode to make it easier to see
 // Helper function to get Unicode symbol for each piece
 std::string getUnicodePiece(Piece* p) {
     if (p == nullptr) return "·";  // Middle dot for empty square
