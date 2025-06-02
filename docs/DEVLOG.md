@@ -4,6 +4,14 @@ A running log of architectural decisions, implementation milestones, and hair-pu
 
 ---
 
+## Day 3 - Scuffed But Functional - 06/02/2025
+- Implemented isValid function responsible for checking validity of move
+- Finalized setupBoard() to fully initialize piece positions at game start
+- Removed board setup from main for further decoupling
+- Tested setupBoard() in main to ensure it's functional
+- Confirmed movePiece() functions correctly after visual inspection
+- Tried checkerboard rendering with Unicode squares… immediate regret ensued
+
 ## Day 2 – Almost Forgot About This Project - 05/28/2025
 - Implemented Board class to hold an 8x8 matrix of Square objects
 - Created movePiece() to transfer Piece from one Square to another
@@ -68,4 +76,4 @@ A running log of architectural decisions, implementation milestones, and hair-pu
 ---
 
 ## Quote of the Day
-> "It's Jo'ver for you, I have the high ground" - *Unknown*
+> "I don't know what I'm doing" - *Unknown*
