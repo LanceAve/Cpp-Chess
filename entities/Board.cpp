@@ -85,3 +85,7 @@ void Board::printBoard() {
         std::cout << std::endl;
     }
 }
+
+void Board::setupBoard() {
+    // Place white pieces
+}
