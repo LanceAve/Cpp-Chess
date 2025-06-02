@@ -88,4 +88,17 @@ void Board::printBoard() {
 
 void Board::setupBoard() {
     // Place white pieces
+    Color white = Color::white;
+    Color black = Color::black;
+
+    // Row 1 – White major pieces
+    grid[7][0]->setPiece(new Piece{rook, white});
+    grid[7][1]->setPiece(new Piece{knight, white});
+    grid[7][2]->setPiece(new Piece{bishop, white});
+    grid[7][3]->setPiece(new Piece{queen, white});
+    grid[7][4]->setPiece(new Piece{king, white});
+    grid[7][5]->setPiece(new Piece{bishop, white});
+    grid[7][6]->setPiece(new Piece{knight, white});
+    grid[7][7]->setPiece(new Piece{rook, white});
+
 }
