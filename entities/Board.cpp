@@ -139,4 +139,10 @@ bool Board::isValidMove(int fromRow, int fromCol, int toRow, int toCol) {
     }
 
     Piece* movingPiece = from->getPiece();
+
+    // If destination has a piece of the same color, invalid
+    if (to->hasPiece() && to->getPiece()->color == movingPiece->color) {
+        return false;
+    }
+
 }
